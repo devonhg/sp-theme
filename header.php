@@ -25,14 +25,15 @@
 	<header style="background-image: url('<?php header_image(); ?>')"  id="masthead" class="site-header" role="banner">
 		<div class='wrapper-line'>
 			<div class="site-branding">
-				<?php if ( is_active_sidebar( 'header-area' ) ) { ?>
-					<div class="sidebar-branding" role="complementary">
-						<?php dynamic_sidebar( 'header-area' ); ?>
-					</div><!-- #primary-sidebar -->
-				<?php } else { ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-				<?php } ?>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+						<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+					<?php if ( is_active_sidebar( 'header-area' ) ) { ?>
+						<div class="sidebar-branding" role="complementary">
+							<?php dynamic_sidebar( 'header-area' ); ?>
+						</div><!-- #primary-sidebar -->
+					<?php }  ?>
+				</a>
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">

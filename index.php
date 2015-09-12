@@ -14,7 +14,11 @@
 
 get_header(); ?>
 
+	<?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
 	<div id="primary" class="content-area">
+	<?php } else { ?>
+	<div id="primary" class="content-area content-full">
+	<?php } ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>

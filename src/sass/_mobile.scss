@@ -1,0 +1,73 @@
+@media screen and (max-width: 37.5em) {
+	ul{
+		margin-left: 0; 
+	}
+
+	font-size: 120%;
+
+	//Site Header
+	.site-branding{
+		.site-description{
+			display: none; 
+		}
+	}
+
+
+	//Menu
+	#site-navigation, 
+	.menu-toggle,
+	#site-navigation li{
+		width: 100%; 
+
+	}#site-navigation{
+		height: auto; 
+		font-size: 150%;
+
+		.current_page_item a{
+			border-width: 0; 
+		}a:hover{
+			padding-top: 0px; 
+		}
+	}
+
+	//Content
+	#content{
+		width: 100%; 
+		padding: 8px; 
+
+		.content-row{
+			width: 100%;
+		}
+
+		#primary,
+		#secondary{
+			width: 100%;
+			float: none; 
+			padding: 8px 0; 
+			h1,h2,h3{
+				text-align: center; 
+			}
+		}
+	}
+
+	//Footer
+	#colophon{
+		aside{
+			width: 100%; 
+		}
+	}
+
+	//Button
+	button, 
+	input[type="button"], 
+	input[type="reset"], 
+	input[type="submit"],
+	button:hover, 
+	input[type="button"]:hover, 
+	input[type="reset"]:hover, 
+	input[type="submit"]:hover{
+		width: 100%;
+		font-size: 150%;
+	}
+
+}

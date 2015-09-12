@@ -1,0 +1,155 @@
+
+/************************
+* Component Objects
+************************/
+//A simple test class
+	.comp-test{
+		background-color: green; 
+	}
+
+//Clearfix, Must be :after!
+	.clearfix {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+//Header text styling
+	.comp-header{
+			font-weight: 500; 
+			font-family: 'Open Sans', sans-serif;	
+			text-transform: uppercase;	
+			font-weight: normal; 
+			color: $color-secondary;
+	}
+
+//Primary Header Button
+	.comp-primary-button{
+  		transition: all 0.5s ease;			
+	}.comp-primary-button-hover{
+		padding-top: 4px; 
+		color: $color-secondary;
+		//font-size: 110%;	
+		border-color: $color-secondary !important;	
+	}
+
+//Aside Header
+	.comp-aside-header{
+		border-bottom: 1px solid $color-secondary; 
+		text-align: center; 		
+	}
+
+/*******************
+* Primary Objects
+*******************/
+//Master Object, applies to entire site.
+	.obj-master{
+		font-family: 'Source Sans Pro', sans-serif;	
+		background-color: #fff; 
+
+		color: $color-secondary; 
+		
+		a{
+			color: $color-outlier;
+			text-decoration: none; 
+		}
+
+		h1,h2,h3,h4,h5,h6{
+			@extend .comp-header; 
+			text-transform: none; 
+		}
+	}
+
+//Header object, applies to Header
+	.obj-header{
+		text-align: center; 
+		border-bottom: 1px solid $color-light-grey; 
+		img{
+			border: 0; 
+		}
+
+		//Set the headers
+		h1,h2,h3{
+			font-size: 225%; 
+			letter-spacing: 6px; 
+			margin: 0; 
+			//text-shadow: 0px 4px 5px rgba(150, 150, 150, .7);
+			
+			@extend .comp-header; 
+		}
+
+		//Link Properties
+		a{
+			text-decoration: none; 
+			color: $color-secondary; 
+		}
+
+	}
+
+//Site navigation object
+	.obj-navigation{
+		@extend .comp-header; 
+		height: 50px; 
+
+		//Current Menu Item
+		.current_page_item a{
+			border-bottom: 1px solid $color-secondary; 
+		}
+
+		//Link Properties
+		a{
+			//font-weight: bold; 
+			color: $color-primary;
+  			@extend .comp-primary-button; 		
+		}
+		a:hover{
+			@extend .comp-primary-button-hover; 
+		}
+
+		letter-spacing: 2px; 
+	}
+
+//Site Footer
+	.obj-footer{
+		background-color: $color-dark-grey; 
+		padding: 10px; 
+		color: $color-primary;
+
+		h1,h2,h3,
+		h4,h5,h6{
+			color: $color-primary; 
+			@extend .comp-aside-header;
+		}
+
+		.site-info{ 
+			text-align: center; 
+		}
+	}
+//Site Sidebar
+	.obj-sidebar{
+
+		h1,h2,h3,
+		h4,h5,h6{
+			@extend .comp-aside-header;
+		}
+	}
+
+
+/*********************
+* Sub Content Objects
+*********************/
+//Button Object
+	.obj-button{
+		@extend .comp-header;
+		
+		padding: 10px; 
+		font-weight: bold; 
+		color: #fff; 
+		background: $color-dark-grey; 
+	}
+
+//Images
+	.obj-image{
+		border: 1px solid $color-light-grey;
+		padding: 3px; 
+	}

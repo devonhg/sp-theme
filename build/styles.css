@@ -1,0 +1,232 @@
+/************************
+* Site Colors
+************************/
+/************************
+* Component Objects
+************************/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic,600,600italic);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+.comp-test {
+  background-color: green; }
+
+.clearfix, .content-row:after, #colophon .sidebar-footer:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.comp-header, .obj-master h1, #page h1, .obj-master h2, #page h2, .obj-master h3, #page h3, .obj-master h4, #page h4, .obj-master h5, #page h5, .obj-master h6, #page h6, .obj-header h1, #masthead h1, .obj-header h2, #masthead h2, .obj-header h3, #masthead h3, .obj-navigation, #site-navigation, .obj-button, button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #444; }
+
+.comp-primary-button, .obj-navigation a, #site-navigation a {
+  transition: all 0.5s ease; }
+
+.comp-primary-button-hover, .obj-navigation a:hover, #site-navigation a:hover {
+  padding-top: 4px;
+  color: #444;
+  border-color: #444 !important; }
+
+.comp-aside-header, .obj-footer h1, #colophon h1, .obj-footer h2, #colophon h2, .obj-footer h3, #colophon h3,
+.obj-footer h4,
+#colophon h4, .obj-footer h5, #colophon h5, .obj-footer h6, #colophon h6, .obj-sidebar h1, #secondary h1, .obj-sidebar h2, #secondary h2, .obj-sidebar h3, #secondary h3,
+.obj-sidebar h4,
+#secondary h4, .obj-sidebar h5, #secondary h5, .obj-sidebar h6, #secondary h6 {
+  border-bottom: 1px solid #444;
+  text-align: center; }
+
+/*******************
+* Primary Objects
+*******************/
+.obj-master, #page {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #fff;
+  color: #444; }
+  .obj-master a, #page a {
+    color: #69838C;
+    text-decoration: none; }
+  .obj-master h1, #page h1, .obj-master h2, #page h2, .obj-master h3, #page h3, .obj-master h4, #page h4, .obj-master h5, #page h5, .obj-master h6, #page h6 {
+    text-transform: none; }
+
+.obj-header, #masthead {
+  text-align: center;
+  border-bottom: 1px solid #ddd; }
+  .obj-header img, #masthead img {
+    border: 0; }
+  .obj-header h1, #masthead h1, .obj-header h2, #masthead h2, .obj-header h3, #masthead h3 {
+    font-size: 225%;
+    letter-spacing: 6px;
+    margin: 0; }
+  .obj-header a, #masthead a {
+    text-decoration: none;
+    color: #444; }
+
+.obj-navigation, #site-navigation {
+  height: 50px;
+  letter-spacing: 2px; }
+  .obj-navigation .current_page_item a, #site-navigation .current_page_item a {
+    border-bottom: 1px solid #444; }
+  .obj-navigation a, #site-navigation a {
+    color: #666; }
+
+.obj-footer, #colophon {
+  background-color: #242424;
+  padding: 10px;
+  color: #666; }
+  .obj-footer h1, #colophon h1, .obj-footer h2, #colophon h2, .obj-footer h3, #colophon h3,
+  .obj-footer h4,
+  #colophon h4, .obj-footer h5, #colophon h5, .obj-footer h6, #colophon h6 {
+    color: #666; }
+  .obj-footer .site-info, #colophon .site-info {
+    text-align: center; }
+
+/*********************
+* Sub Content Objects
+*********************/
+.obj-button, button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  padding: 10px;
+  font-weight: bold;
+  color: #fff;
+  background: #242424; }
+
+.obj-image, img {
+  border: 1px solid #ddd;
+  padding: 3px; }
+
+/****************************
+* Structure File
+****************************/
+/*
+	Anything that pertains to general positioning goes into this file.
+*/
+body {
+  background-color: #242424; }
+
+.strt-center, #content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0 30px; }
+
+/**************
+* Resets
+**************/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  box-shadow: none;
+  text-shadow: none;
+  border: 0;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  -webkit-appearance: button;
+  /* for input */
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+/****************
+* Structure Rules
+****************/
+#primary, #secondary {
+  float: left;
+  padding: 30px;
+  width: 50%;
+  background-color: white; }
+
+#primary.content-full {
+  float: none;
+  width: 100%; }
+
+#primary h1:first-child, h2:first-child {
+  margin-top: 0; }
+
+#secondary aside:first-child h1 {
+  margin-top: 0; }
+
+#masthead {
+  margin-bottom: 40px; }
+
+#site-navigation {
+  display: inline-block;
+  margin: 0 auto;
+  width: auto;
+  float: none; }
+  #site-navigation li {
+    padding: 10px; }
+
+#colophon aside {
+  width: 33%;
+  float: left;
+  padding: 10px; }
+
+@media screen and (max-width: 37.5em) {
+  ul {
+    margin-left: 0; }
+
+  font-size: 120%;
+  .site-branding .site-description {
+    display: none; }
+
+  #site-navigation,
+  .menu-toggle,
+  #site-navigation li {
+    width: 100%; }
+
+  #site-navigation {
+    height: auto;
+    font-size: 150%; }
+    #site-navigation .current_page_item a {
+      border-width: 0; }
+    #site-navigation a:hover {
+      padding-top: 0px; }
+
+  #content {
+    width: 100%;
+    padding: 8px; }
+    #content .content-row {
+      width: 100%; }
+    #content #primary,
+    #content #secondary {
+      width: 100%;
+      float: none;
+      padding: 8px 0; }
+      #content #primary h1, #content #primary h2, #content #primary h3,
+      #content #secondary h1,
+      #content #secondary h2,
+      #content #secondary h3 {
+        text-align: center; }
+
+  #colophon aside {
+    width: 100%; }
+
+  button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"],
+  button:hover,
+  input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover {
+    width: 100%;
+    font-size: 150%; } }
+
+/*# sourceMappingURL=sass.css.map */
+
