@@ -1,0 +1,20 @@
+{
+  "name": "sean-pack",
+  "version": "0.0.0",
+  "homepage": "https://github.com/devonhg/sp-theme",
+  "authors": [
+    "devonhg <devon.hugh.godfrey@gmail.com>"
+  ],
+  "description": "Theme for Sean Packs Site",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.5"
+  }
+}
