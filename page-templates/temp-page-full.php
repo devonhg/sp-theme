@@ -4,6 +4,9 @@
 */
 
 get_header(); ?>
+	<?php
+		dhg_title();
+	?>
 
 	<div id="primary" class="content-area content-full">
 		<main id="main" class="site-main" role="main">

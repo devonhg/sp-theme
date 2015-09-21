@@ -87,6 +87,11 @@ input[type="submit"] {
   .obj-footer .site-info, #colophon .site-info {
     text-align: center; }
 
+.obj-content #primary h1, #content #primary h1,
+.obj-content #secondary h1,
+#content #secondary h1 {
+  font-size: 170%; }
+
 /*********************
 * Sub Content Objects
 *********************/
@@ -145,6 +150,9 @@ input[type="submit"]:hover {
 /****************
 * Structure Rules
 ****************/
+.page-title {
+  text-align: center; }
+
 #primary, #secondary {
   float: left;
   padding: 30px;

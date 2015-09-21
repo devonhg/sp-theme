@@ -59,6 +59,11 @@
 //Content area structure
 	#content{
 		@extend .strt-center;
+		@extend .obj-content; 
+	}
+
+	.page-title{
+		text-align: center; 
 	}
 
 	.content-row:after{

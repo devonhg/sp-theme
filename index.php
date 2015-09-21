@@ -14,6 +14,10 @@
 
 get_header(); ?>
 
+	<?php
+		dhg_title();
+	?>
+
 	<?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
 	<div id="primary" class="content-area">
 	<?php } else { ?>
@@ -22,6 +26,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
+
+			<?php  the_title( '<h1 class="entry-title">', '</h1>' );   ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
