@@ -94,6 +94,9 @@ input[type="submit"] {
 .obj-content .entry-content, #content .entry-content {
   margin-top: 0 !important;
   margin-bottom: 24px !important; }
+.obj-content .post, #content .post {
+  border-bottom: 1px solid #666;
+  padding-bottom: 15px; }
 
 /*********************
 * Sub Content Objects
