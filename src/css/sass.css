@@ -92,8 +92,8 @@ input[type="submit"] {
 #content #secondary h1 {
   font-size: 170%; }
 .obj-content .entry-content, #content .entry-content {
-  margin-top: 0;
-  margin-bottom: 24px; }
+  margin-top: 0 !important;
+  margin-bottom: 24px !important; }
 
 /*********************
 * Sub Content Objects
