@@ -58,6 +58,11 @@
 			@extend .comp-header; 
 			text-transform: none; 
 		}
+
+		//form objects
+		input{
+			width: 100%; 
+		}
 	}
 
 //Header object, applies to Header
@@ -154,6 +159,51 @@
 		}
 	}
 
+//Site Comments
+	.obj-comments{
+
+		//Reset comment style
+		ol{
+			list-style: none; 
+			margin-left: 0; 
+			padding-left: 0; 
+		}
+
+		//Style the comment titles
+		.comment-meta{
+			padding: 3px;
+			//border-bottom: $universal-line; 
+			//text-align: center; 
+		}
+
+		//Style the comment entry wrapper
+		.comment-list{
+			border-top: 1px dashed $color-primary;
+			border-bottom: 1px dashed $color-primary; 
+
+			padding: 25px 0; 
+		}
+
+		//Style comment wrapper
+		.comment{
+			margin-bottom: 25px; 
+		}
+
+		//Content Styling
+		.comment-content{
+			padding-left: 20px; 
+		}
+
+		//Hide uneeded form fields
+		/*.comment-form-email,
+		.comment-form-url,
+		.comment-notes{
+			display: none; 
+		}
+		*/
+
+	}
+
 /*********************
 * Sub Content Objects
 *********************/
@@ -164,7 +214,7 @@
 		padding: 10px; 
 		font-weight: bold; 
 		color: #fff; 
-		background: $color-dark-grey; 
+		background: $color-dark-grey;  
 	}
 
 //Images
@@ -172,3 +222,5 @@
 		border: 1px solid $color-light-grey;
 		padding: 3px; 
 	}
+
+

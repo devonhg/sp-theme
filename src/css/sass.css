@@ -54,6 +54,8 @@ input[type="submit"] {
     text-decoration: none; }
   .obj-master h1, #page h1, .obj-master h2, #page h2, .obj-master h3, #page h3, .obj-master h4, #page h4, .obj-master h5, #page h5, .obj-master h6, #page h6 {
     text-transform: none; }
+  .obj-master input, #page input {
+    width: 100%; }
 
 .obj-header, #masthead {
   text-align: center;
@@ -97,6 +99,28 @@ input[type="submit"] {
 .obj-content .post, #content .post {
   border-bottom: 1px solid #666;
   padding-bottom: 15px; }
+
+.obj-comments, #comments {
+  /*.comment-form-email,
+  .comment-form-url,
+  .comment-notes{
+  	display: none; 
+  }
+  */ }
+  .obj-comments ol, #comments ol {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0; }
+  .obj-comments .comment-meta, #comments .comment-meta {
+    padding: 3px; }
+  .obj-comments .comment-list, #comments .comment-list {
+    border-top: 1px dashed #666;
+    border-bottom: 1px dashed #666;
+    padding: 25px 0; }
+  .obj-comments .comment, #comments .comment {
+    margin-bottom: 25px; }
+  .obj-comments .comment-content, #comments .comment-content {
+    padding-left: 20px; }
 
 /*********************
 * Sub Content Objects
