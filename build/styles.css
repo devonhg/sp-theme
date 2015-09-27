@@ -54,8 +54,11 @@ input[type="submit"] {
     text-decoration: none; }
   .obj-master h1, #page h1, .obj-master h2, #page h2, .obj-master h3, #page h3, .obj-master h4, #page h4, .obj-master h5, #page h5, .obj-master h6, #page h6 {
     text-transform: none; }
-  .obj-master input, #page input {
-    width: 100%; }
+  .obj-master input, #page input,
+  .obj-master textarea,
+  #page textarea {
+    width: 100%;
+    margin: 10px 0; }
 
 .obj-header, #masthead {
   text-align: center;
