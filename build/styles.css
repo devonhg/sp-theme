@@ -102,6 +102,10 @@ input[type="submit"] {
 .obj-content .post, #content .post {
   border-bottom: 1px solid #666;
   padding-bottom: 15px; }
+.obj-content .entry-meta, #content .entry-meta {
+  padding-bottom: 15px; }
+.obj-content .entry-title, #content .entry-title {
+  margin-bottom: 0; }
 
 .obj-comments, #comments {
   /*.comment-form-email,
