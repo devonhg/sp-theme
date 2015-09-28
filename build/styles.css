@@ -106,6 +106,8 @@ input[type="submit"] {
   padding-bottom: 15px; }
 .obj-content .entry-title, #content .entry-title {
   margin-bottom: 0; }
+.obj-content .content-full .entry-title, #content .content-full .entry-title {
+  text-align: center; }
 
 .obj-comments, #comments {
   /*.comment-form-email,
