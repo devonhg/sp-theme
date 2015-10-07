@@ -7,7 +7,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic,600,600italic);
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
-@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+@import url(https://fonts.googleapis.com/css?family=Raleway:800);
 .comp-test {
   background-color: green; }
 
@@ -20,8 +20,7 @@
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  font-weight: 500;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   font-weight: normal;
   color: #444; }
