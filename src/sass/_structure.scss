@@ -145,3 +145,9 @@
 	#comments{
 		@extend .obj-comments;
 	}
+
+//Project Sonts
+	.CLIENT_songs,
+	.single-pt_songs{
+		@extend .obj-project-songs-list;
+	}
