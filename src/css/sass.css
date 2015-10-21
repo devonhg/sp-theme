@@ -16,7 +16,7 @@
   display: table;
   clear: both; }
 
-.comp-header, .obj-master h1, #page h1, .obj-master h2, #page h2, .obj-master h3, #page h3, .obj-master h4, #page h4, .obj-master h5, #page h5, .obj-master h6, #page h6, .obj-header h1, #masthead h1, .obj-header h2, #masthead h2, .obj-header h3, #masthead h3, .obj-navigation, #site-navigation, .obj-button, button,
+.comp-header, .obj-master h1, html h1, .obj-master h2, html h2, .obj-master h3, html h3, .obj-master h4, html h4, .obj-master h5, html h5, .obj-master h6, html h6, .obj-header h1, #masthead h1, .obj-header h2, #masthead h2, .obj-header h3, #masthead h3, .obj-navigation, #site-navigation, .obj-button, button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -44,20 +44,22 @@ input[type="submit"] {
 /*******************
 * Primary Objects
 *******************/
-.obj-master, #page {
+.obj-master body, html body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #fff;
   color: #444; }
-  .obj-master a, #page a {
-    color: #69838C;
-    text-decoration: none; }
-  .obj-master h1, #page h1, .obj-master h2, #page h2, .obj-master h3, #page h3, .obj-master h4, #page h4, .obj-master h5, #page h5, .obj-master h6, #page h6 {
-    text-transform: none; }
-  .obj-master input, #page input,
-  .obj-master textarea,
-  #page textarea {
-    width: 100%;
-    margin: 10px 0; }
+.obj-master a, html a {
+  color: #69838C;
+  text-decoration: none; }
+.obj-master h1, html h1, .obj-master h2, html h2, .obj-master h3, html h3, .obj-master h4, html h4, .obj-master h5, html h5, .obj-master h6, html h6 {
+  text-transform: none; }
+.obj-master input, html input,
+.obj-master textarea,
+html textarea {
+  width: 100%;
+  margin: 10px 0; }
+.obj-master .single-pt_songs article.pt_songs, html .single-pt_songs article.pt_songs {
+  border-style: none !important; }
 
 .obj-header, #masthead {
   text-align: center;

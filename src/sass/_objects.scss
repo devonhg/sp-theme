@@ -44,10 +44,12 @@
 *******************/
 //Master Object, applies to entire site.
 	.obj-master{
-		font-family: 'Source Sans Pro', sans-serif;	
-		background-color: #fff; 
+		body{
+			font-family: 'Source Sans Pro', sans-serif;	
+			background-color: #fff; 
 
-		color: $color-secondary; 
+			color: $color-secondary; 
+		}
 		
 		a{
 			color: $color-outlier;
@@ -65,7 +67,12 @@
 			width: 100%; 
 			margin: 10px 0;
 		}
+		.single-pt_songs article.pt_songs{
+			border-style: none!important;
+		}
 	}
+
+
 
 //Header object, applies to Header
 	.obj-header{
@@ -247,7 +254,6 @@
 				text-decoration: underline; 
 			}
 		}
-
 	}
 /*********************
 * Sub Content Objects
